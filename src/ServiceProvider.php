@@ -31,7 +31,7 @@ class ServiceProvider extends BaseServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['breadcrumbs'] = $this->app->singleton('breadcrumbs',function($app)
+		$this->app['Breadcrumbs'] = $this->app->singleton('breadcrumbs',function($app)
 		{
 			$breadcrumbs = $this->app->make('DaveJamesMiller\Breadcrumbs\Manager');
 
